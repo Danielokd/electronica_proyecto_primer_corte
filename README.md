@@ -32,8 +32,13 @@ Lo anterior se pudo realizar gracias a que se usó un programa llamado CoolTerm,
 ```
 Lo anterior se hizo de esta manera para poder visualizar correctamente el archivo csv y así mismo ser importado por medio de Python para una correcta visualización.
 ## Montaje y Conexión 
+- Se conectan pines TX y RX del sensor PZEM al arduino a los pines 2 y 3 (configurados en el archivo .ino).
+- Se alimenta la parte lógica del sensor con los 5 Voltios del arduino.
+- Se conecta un sensor de corriente al PZEM, el cual envuelve el neutro de la red para medir la corriente que pasa a través del cable.
+- Se conecta el arduino al mismo PC en cuestión para conectarse al serial y obtener los datos.
 El montaje se relaciona con la imagen a continuación:
 [Ver Conexión](./images/montaje.jpeg)
+
 ## Funcionalidades
 Para poder detectar de manera correcta el comportamiento a través del tiempo, se tomaron alrededor de 500 datos a lo largo de un día  completo en tiempos de uso y desuso del equipo. 
 De la misma manera, dependiendo de las actividades que se estuvieran realizando, el consumo del equipo es variado.
