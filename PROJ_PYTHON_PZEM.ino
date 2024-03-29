@@ -17,7 +17,6 @@ void loop() {
   // Si hay error de comunicacion el voltaje = -1 por ello la condicion
   if (v < 0.0) v = 0.0;
   //Corriente RMS 
-
   float i = pzem.current(ip);
   //Potencia Promedio o activa 
   float p = pzem.power(ip);
